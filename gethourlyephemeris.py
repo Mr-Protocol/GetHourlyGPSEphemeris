@@ -2,8 +2,6 @@ import os
 import time
 import urllib.request
 import ftplib
-import urllib
-
 
 #Gets the day of year
 DOY = time.localtime().tm_yday
@@ -18,7 +16,6 @@ ephemerisfilename = "hour" + str(DOY) + "0." + str(twodyear) + "n.Z"
 fullurl = pathfileurl + ephemerisfilename
 #Sets up parsed URL if needed
 parsedurl = urllib.parse.urlparse(fullurl)
-
 #print ("URL Generated " + fullurl + '\n')
 
 ###Download File from URL
